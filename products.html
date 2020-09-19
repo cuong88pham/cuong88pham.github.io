@@ -8,42 +8,76 @@
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/all.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
 </head>
 <body>
 
   <nav>
-<!--banner-->
+
     <div class="container">
       <div class="row">
 
-        <div class="col col-3">
-          <a href="./index.html"><img class="logo" src="assets/images/logo.png" width="60"/></a>
-          <a href="./index.html">
-            <div class="brand">
-              <h1 class="brand-name">ITS.TUL</h1>
-              <p class="slogan">phone cases, accessories</p> 
-            </div>
-          </a>     
+        <div class="menu-top-mobie width2 col"> <!--menu-top-mobie-->
+          <i class="fas fa-bars fa-2x dropbtn"></i>
+          <div class="dropdown-content dropdown-menu-top">
+              <ul>
+                <li>
+                  <a href="./index.html">HOME <img src="./assets/images/arrow.png" width="10" /></a>
+                </li>
 
+                <li>
+                  <a href="#">PRODUCTS <img src="./assets/images/arrow.png" width="10" /></a>
+                </li>
+
+                <li>
+                  <a href="#">ABOUT US <img src="./assets/images/arrow.png" width="10" /></a>
+                </li>
+
+                <li>
+                  <a href="#">CONTACT <img src="./assets/images/arrow.png" width="10" /></a>
+                </li> 
+
+              </ul>
+          </div>
+
+        </div><!--menu-top-mobie-->
+
+
+        <div class="col col-3 width9">
+          <div class="col col-3">
+            <a href="./index.html"><img class="logo" src="assets/images/logo.png" width="60"/></a>
+          </div>
+          <div class="col col-9">
+           
+              <div class="brand width12">
+                <h1 class="brand-name"> <a class="btn-big btn-color" href="./index.html">ITS.TUL</a></h1>
+                <p class="slogan">phone cases, accessories</p> 
+              </div>
+            </a> 
+
+          </div>
+              
         </div>
 
-        <div class="col col-8">
+        <div class="col col-8 menu-top-big">
           <ul class="menu-top">
             <li><a href="./index.html">HOME</a></li>
             <li><a href="#">PRODUCTS</a></li>
             <li><a href="#">ABOUT US</a></li>
             <li><a href="#">CONTACT</a></li>           
           </ul>
+        </div>       
+        
+        <div class="col col-1 width1">
+          <a class="shopping-cart" href="#">
+            <img  src="./assets/images/shopping-cart.png" width="25"  />
+          </a>
         </div>
-
-        <a href="#">
-          <div class="col col-1">
-            <img src="./assets/images/shopping-cart.png" class="shopping-cart" />
-          </div>
-        </a>
+       
 
       </div>
-    </div>      
+    </div> 
+
   </nav>
 
 
@@ -54,21 +88,32 @@
 
         <div class="all-products">
 
-          <div class=" col col-3">            
+          <div class="display-none col col-2">            
             <h2><i class="fas fa-angle-left fa-2x"></i> ALL PRODUCTS</h2> 
           </div>
 
-          <div class="col col-6 ">
+          <div class="display-none col col-7 dropdown-content">
             <ul class="menu-products">
-
+                             
               <li>               
-                  DEVICES:                        
-                  all
-                  <a href="#">
-                    <i class="fas fa-angle-down"></i>
-                  </a>                
+                <label for="phone">DEVICES:</label>                        
+                  <select name="phone" id="phone">
+                    <option value="all">all</option>
+                    <option value="iPhone 5 - 5s">iPhone 5 - 5s</option>
+                    <option value="iPhone 8 - 8 Plus">iPhone 8 - 8 Plus</option>
+                    <option value="iPhone XR">iPhone XR</option>
+                    <option value="iPhone 6 - 6s">iPhone 6 - 6s</option>
+                    <option value="iPhone X - XS">iPhone X - XS</option>
+                    <option value="iPhone 11 PRO">iPhone 11 PRO</option>
+                    <option value="iPhone 6 Plus - 6s Plus">iPhone 6 Plus - 6s Plus</option>
+                    <option value="iPhone XR">iPhone XR</option>
+                    <option value="iPhone 7 - 7 Plus">iPhone 7 - 7 Plus</option>
+                    <option value="AirPods">AirPods</option>
+                    <option value="iPhone XS MAX">iPhone XS MAX</option>
+                    <option value="iPhone 11 PRO MAX">iPhone 11 PRO MAX</option>
+                  </select>                
               </li>
-
+                  
               <li>
                 DATE ADDED
                 <a href="#">
@@ -90,8 +135,60 @@
               </li> 
 
             </ul>
+
           </div>
-          
+
+<!--menu-products-mobie-->
+          <div class="menu-products-mobie"> 
+            <i class="fas fa-filter dropbtn"></i>
+            <div class="dropdown-content">
+              <ul>
+                               
+                <li>               
+                  <label for="phone">DEVICES:</label>                        
+                    <select name="phone" id="phone">
+                      <option value="all">all</option>
+                      <option value="iPhone 5 - 5s">iPhone 5 - 5s</option>
+                      <option value="iPhone 8 - 8 Plus">iPhone 8 - 8 Plus</option>
+                      <option value="iPhone XR">iPhone XR</option>
+                      <option value="iPhone 6 - 6s">iPhone 6 - 6s</option>
+                      <option value="iPhone X - XS">iPhone X - XS</option>
+                      <option value="iPhone 11 PRO">iPhone 11 PRO</option>
+                      <option value="iPhone 6 Plus - 6s Plus">iPhone 6 Plus - 6s Plus</option>
+                      <option value="iPhone XR">iPhone XR</option>
+                      <option value="iPhone 7 - 7 Plus">iPhone 7 - 7 Plus</option>
+                      <option value="AirPods">AirPods</option>
+                      <option value="iPhone XS MAX">iPhone XS MAX</option>
+                      <option value="iPhone 11 PRO MAX">iPhone 11 PRO MAX</option>
+                    </select>                
+                </li>
+                    
+                <li>
+                  DATE ADDED
+                  <a href="#">
+                    <i class="fas fa-arrow-up"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fas fa-arrow-down"></i>
+                  </a>  
+                </li>
+  
+                <li>
+                  PRICE
+                  <a href="#">
+                    <i class="fas fa-arrow-up"></i>
+                  </a>
+                  <a href="#"> 
+                    <i class="fas fa-arrow-down"></i>
+                  </a> 
+                </li> 
+  
+              </ul>
+  
+            </div>
+
+          </div>
+<!--menu-products-mobie-->
           <div class="page-number page-number-top col col-3 ">
             <ul class="float-right">
               <li><a href="#"> <i class="fas fa-angle-left"></i></a></li>
@@ -115,8 +212,7 @@
     <div class="container">   
       <div class="row"> 
         <div id="all-products">
-          
-            <div class="col col-3">
+            <div class="col col-3 width12 page-1">
               <div class="product">
                 <img src="./assets/images/IMG_2704.JPG" class="item-img">
                 <p class="name-product">ANIMAL PLANET</p>
@@ -128,8 +224,7 @@
                 </p>
               </div>
             </div>
-
-            <div class="col col-3">
+            <div class="col col-3 width12 page-1">
               <div class="product">
                 <img src="./assets/images/IMG_2705.JPG" class="item-img">
                 <p class="name-product">MONSTER INC</p>
@@ -142,7 +237,7 @@
               </div>
             </div>
 
-            <div class="col col-3">
+            <div class="col col-3 width12 page-1">
               <div class="product">
                 <img src="./assets/images/IMG_2710.JPG" class="item-img">
                 <p class="name-product">BLACK AND WHITE</p>
@@ -155,7 +250,7 @@
               </div>
             </div>
 
-            <div class="col col-3">
+            <div class="col col-3 width12 page-1">
               <div class="product">
                 <img src="./assets/images/IMG_2716.JPG" class="item-img">
                 <p class="name-product">QUOTES</p>
@@ -168,7 +263,7 @@
               </div>
             </div>
 
-            <div class="col col-3">
+            <div class="col col-3 width12 page-1">
               <div class="product">
                 <img src="./assets/images/IMG_2707.JPG" class="item-img">
                 <p class="name-product">BLACK AND ORANGE</p>
@@ -181,7 +276,7 @@
               </div>
             </div>
 
-            <div class="col col-3">
+            <div class="col col-3 width12 page-1">
               <div class="product">
                 <img src="./assets/images/IMG_2714.JPG" class="item-img">
                 <p class="name-product">KEEP SMILE</p>
@@ -194,7 +289,7 @@
               </div>
             </div>
 
-            <div class="col col-3">
+            <div class="col col-3 width12 page-2">
               <div class="product">
                 <img src="./assets/images/IMG_2718.JPG" class="item-img">
                 <p class="name-product">FLORAL CLEAR CASE</p>
@@ -207,7 +302,7 @@
               </div>
             </div>
 
-            <div class="col col-3">
+            <div class="col col-3 width12 page-2">
               <div class="product">
                 <img src="./assets/images/IMG_2722.JPG" class="item-img">
                 <p class="name-product">PIGGY</p>
@@ -220,7 +315,7 @@
               </div>
             </div>
 
-            <div class="col col-3">
+            <div class="col col-3 width12 page-2">
               <div class="product">
                 <img src="./assets/images/IMG_2703.JPG" class="item-img">
                 <p class="name-product">MARCH SET (AIRPODS)</p>
@@ -233,7 +328,7 @@
               </div>
             </div>
 
-            <div class="col col-3">
+            <div class="col col-3 width12 page-2">
               <div class="product">
                 <img src="./assets/images/IMG_2717.JPG" class="item-img">
                 <p class="name-product">STICKER CLEAR CASE</p>
@@ -246,7 +341,7 @@
               </div>
             </div>
 
-            <div class="col col-3">
+            <div class="col col-3 width12 page-2">
               <div class="product">
                 <img src="./assets/images/IMG_2720.JPG" class="item-img">
                 <p class="name-product">FLUFFLY PUPPY</p>
@@ -259,7 +354,7 @@
               </div>
             </div>
 
-            <div class="col col-3">
+            <div class="col col-3 width12 page-2">
               <div class="product">
                 <img src="./assets/images/IMG_2721.JPG" class="item-img">
                 <p class="name-product">FRUITY JUICY</p>
@@ -305,117 +400,148 @@
           <h2>CATEGORIES</h2>
 
           <div class="col col-7 devices">
+
             <h3>DEVICES</h3>
-            <ul class="flex-box">
 
-              <li class="col-4">
-                <a href="#">
-                  iPhone 5 - 5s <img src="./assets/images/arrow.png" width="10" />
-                </a>
-              </li>   
 
-              <li class="col-4">
-                <a href="#">
-                  iPhone 8 - 8 Plus <img src="./assets/images/arrow.png" width="10" />
-                </a>
-              </li>
+              <div class="col col-4">
+                <div class="col col-9 list-phone">
+                  <a href="#">
+                    iPhone 5 - 5s <img src="./assets/images/arrow.png" width="10" />
+                  </a>
+                </div>
+              </div>   
 
-              <li class="col-4">
-                <a href="#">
-                  iPhone XR <img src="./assets/images/arrow.png" width="10" />
-                </a>
-              </li>
+              <div class="col col-4">
+                <div class="col col-9 list-phone">
+                  <a href="#">
+                    iPhone 8 - 8 Plus <img src="./assets/images/arrow.png" width="10" />
+                  </a>
+                </div>
+              </div>
 
-              <li class="col-4">
-                <a href="#">
-                  iPhone 6 - 6s <img src="./assets/images/arrow.png" width="10" />
-                </a>
-              </li>
+              <div class="col col-4">
+                <div class="col col-9 list-phone">
+                  <a href="#">
+                    iPhone XR <img src="./assets/images/arrow.png" width="10" />
+                  </a>
+                </div>
+              </div>
 
-              <li class="col-4">
-                <a href="#">
-                  iPhone X - XS <img src="./assets/images/arrow.png" width="10" />
-                </a>
-              </li>
+              <div class="col col-4">
+                <div class="col col-9 list-phone">
+                  <a href="#">
+                    iPhone 6 - 6s <img src="./assets/images/arrow.png" width="10" />
+                  </a>
+                </div>
+              </div>
 
-              <li class="col-4">
-                <a href="#">
-                  iPhone 11 PRO <img src="./assets/images/arrow.png" width="10" />
-                </a>
-              </li>
+              <div class="col col-4">
+                <div class="col col-9 list-phone">
+                  <a href="#">
+                    iPhone X - XS <img src="./assets/images/arrow.png" width="10" />
+                  </a>
+                </div>
+              </div>
 
-              <li class="col-4">
-                <a href="#">
-                  iPhone 6 Plus - 6s Plus <img src="./assets/images/arrow.png" width="10" />
-                </a>
-              </li>
+              <div class="col col-4">
+                <div class="col col-9 list-phone">
+                  <a href="#">
+                    iPhone 11 PRO <img src="./assets/images/arrow.png" width="10" />
+                  </a>
+                </div>
+              </div>
 
-              <li class="col-4">
-                <a href="#">
-                  iPhone XR  <img src="./assets/images/arrow.png" width="10" />
-                </a>
-              </li>
+              <div class="col col-4">
+                <div class="col col-9 list-phone">
+                  <a href="#">
+                    iPhone 6 Plus - 6s Plus <img src="./assets/images/arrow.png" width="10" />
+                  </a>
+                </div>
+              </div>
 
-              <li class="col-4">
-                <a href="#">
-                  iPhone 11 PRO MAX <img src="./assets/images/arrow.png" width="10" />
-                </a>
-              </li>
+              <div class="col col-4">
+                <div class="col col-9 list-phone">
+                  <a href="#">
+                    iPhone XR  <img src="./assets/images/arrow.png" width="10" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="col col-4">
+                <div class="col col-9 list-phone">
+                  <a href="#">
+                    iPhone 11 PRO MAX <img src="./assets/images/arrow.png" width="10" />
+                  </a>
+                </div>
+              </div>
               
-              <li class="col-4">
-                <a href="#">
-                  iPhone 7 - 7 Plus <img src="./assets/images/arrow.png" width="10" />
-                </a>
-              </li>
-              <li class="col-4">
-                <a href="#">
-                  iPhone XS MAX <img src="./assets/images/arrow.png" width="10" />
-                </a>
-              </li>
+              <div class="col col-4">
+                <div class="col col-9 list-phone">
+                  <a href="#">
+                    iPhone 7 - 7 Plus <img src="./assets/images/arrow.png" width="10" />
+                  </a>
+                </div> 
+              </div>
 
-              <li class="col-4">
-                <a href="#">
-                  AirPods  <img src="./assets/images/arrow.png" width="10" />
-                </a>
-              </li>
+              <div class="col col-4">
+                <div class="col col-9 list-phone">
+                  <a href="#">
+                    iPhone XS MAX <img src="./assets/images/arrow.png" width="10" />
+                  </a>
+                </div> 
+              </div>
 
-            </ul>
+              <div class="col col-4">
+                <div class="col col-9 list-phone">
+                  <a href="#">
+                    AirPods  <img src="./assets/images/arrow.png" width="10" />
+                  </a>
+                </div>
+              </div>
+
+            
           </div>
-          <div class="col col-1">
-
-          </div>
+         
           
-          <div class="col col-4 ">
+          <div class="col col-4 style ">
             <div class="style-categories">
+                
               <h3>STYLES</h3>
-              <ul class="flex-box">
-
-                <li class="col-7">
+            
+              <div class="col col-7 width6">
+                <div class="col col-7 list-style">
                   <a href="#">
                     Minimalistic <img src="./assets/images/arrow.png" width="10" />
                   </a>
-                </li>
+                </div>
+              </div>
 
-                <li class="col-7">
+              <div class="col col-7 width6">
+                <div class="col col-7 list-style">
                   <a href="#">
                     Cartoon <img src="./assets/images/arrow.png" width="10" />
                   </a>
-                </li>
+                </div>
+              </div>
 
-                <li class="col-7">
+              <div class="col col-7 width6">
+                <div class="col col-7 list-style">
                   <a href="#">
                     Clear <img src="./assets/images/arrow.png" width="10" />
                   </a>
-                </li>
+                </div>
+              </div>
 
-                <li class="col-7">
+              <div class="col col-7 width6">
+                <div class="col col-7 list-style">              
                   <a href="#">
                     Silicone <img src="./assets/images/arrow.png" width="10" />
                   </a>
-                </li>
+                </div>               
+              </div>
 
-              </ul>
-            </div>
+            </div>          
           </div>
 
         </div>
@@ -429,25 +555,43 @@
 
     <div class="container">
       <div class="row">
-        <div id="address" class="flex-box col col-6">
-          <ul>
-            <li class="col col-6"><i class="fas fa-map-marker-alt"></i>212A Vo Van Tan F.5 Q.3</li>           
-            <li class="col col-6"><i class="fas fa-map-marker-alt"></i>The New PlayGround - 26 Ly Tu </li>
-            <li class="col col-6"><i class="fas fa-map-marker-alt"></i>56 Tran Quang Dieu F.14 Q.3</li>
-            <li class="col col-6"><i class="fas fa-map-marker-alt"></i>Vincom Ba Trieu 7th Floor</li>
-          </ul>
+        <div id="address" class="col col-6">
+            
+              <div class="col col-6 list-address">
+                <i class="fas fa-map-marker-alt"></i>
+                212A Vo Van Tan F.5 Q.3
+              </div>   
 
+              <div class="col col-6 list-address">
+                <i class="fas fa-map-marker-alt"></i>
+                The New PlayGround - 26 Ly Tu 
+              </div>
+
+              <div class="col col-6 list-address">
+                <i class="fas fa-map-marker-alt"></i>
+                56 Tran Quang Dieu F.14 Q.3
+              </div>
+
+              <div class="col col-6 list-address">
+                <i class="fas fa-map-marker-alt"></i>
+                Vincom Ba Trieu 7th Floor
+              </div>
+        
         </div>
         <div class="contact">
-          <p><i class="fas fa-phone-alt"></i> <strong>+84 90 244 33 72</strong></p>
-          <a href="#">
-            <i class="fab fa-facebook-f icon-right"></i>
-          </a>
 
-          <a href="#">
-            <i class="fab fa-instagram icon-right"></i>
-          </a>
-          
+          <div class="phone-number col col-8">
+            <p><i class="fas fa-phone-alt"></i> <strong>+84 90 244 33 72</strong></p>
+          </div>
+          <div class="fb-ig col col-4">
+            <a href="#">
+              <i class="fab fa-facebook-f icon-right"></i>
+            </a>
+
+            <a href="#">
+              <i class="fab fa-instagram icon-right"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>

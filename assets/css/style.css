@@ -1,4 +1,15 @@
+@import "fonts.css";
+
 /*==========Global==============*/
+.menu-top-mobie {
+  display: none;
+}
+.menu-products-mobie {
+  display: none;
+}
+.new-arrivals-mobie {
+  display: none;
+}
 .col {
   float: left;
 }
@@ -50,20 +61,29 @@
 .font-YesevaOne {
   font-family: "Yeseva One";
 }
+.font-Krungthep {
+  font-family: "Krungthep";
+}
+.font-Menlo {
+  font-family: "Menlo";
+}
+.d-block {
+  display: block;
+}
 
 body {
   color: black;
+  font-family: "Menlo";
+  font-size: 14px;
 }
 
 .container {
-  
   margin: auto;
-  padding: 0 15px;
+  padding: 0 20px;
 }
-.row{
+.row {
   clear: both;
 }
-
 
 .flex-box {
   display: flex;
@@ -75,7 +95,7 @@ body {
 h1 {
   font-size: 40px;
   font-weight: bold;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
 }
 h2 {
   font-size: 22px;
@@ -90,9 +110,9 @@ h3 {
 
 /*==========banner==============*/
 nav {
-  background: url(../images/photo_2020-09-12_19-34-56.jpg) bottom no-repeat  ;
-  height: 142px; 
-  padding: 20px;
+  background: url(../images/bg_header.png) bottom no-repeat  ;
+  min-height: 100px; 
+  padding: 30px 0;
   background-size: cover;
 }
 .logo {
@@ -104,40 +124,73 @@ nav {
   text-align: center;
 }
 .brand-name {
-  font-family: "Livvic";
+  font-family: "Bangla-Sangam-MN";
 }
 .slogan {
-  font-family: "Roboto Mono";
+  font-family: "Menlo";
   font-weight: bold;
   font-size: 12px;
+  padding: 4px 0;
+}
+.menu-top {
+  margin-top: 10px;
 }
 .menu-top li {
-  display: inline-table;
-  padding-top: 30px;
-  font-family: "Yeseva One"
+  display: inline-block;
   
 }
 .menu-top li a {
-  text-decoration: none;
-  padding-left: 50px;
+  display: block;
   color: black;
+  font-family: "Krungthep";
+  padding: 15px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
 }
-.zoom:hover {
-  color: red;
-  font-size: 20px;
-}
+
 .shopping-cart {
-  height: 25px;
-  padding-top: 20px;
-  float: right;
+  display: block;
+  padding: 15px;
+  position: relative;
+  text-align: right;
+}
+
+.shopping-cart span {
+  background-color: #fff;
+  box-shadow: 2px 2px 8px 0px #a7a7a7;
+  border-radius: 50%;
+  color: #000;
+  font-size: 10px;
+  position: absolute;
+  min-width: 20px;
+  min-height: 20px;
+  text-align: center;
+  line-height: 20px;
+  top: 0;
+  right: 0;
 }
 /*==============banner===============*/
 
 
 
 /*=================main================*/
+#wrapper{
+  min-height: 100vh;
+  height: 100vh;
+  position: relative;
+
+}
+main {
+  
+}
+
+.button-right img, .button-center img {
+  background-color:  gray;
+  border-radius: 50%;
+}
 .bg-home {
-  background: url(../images/BG.jpg) no-repeat top center;
+  background: url(../images/BG.jpg) no-repeat bottom center;
   background-size: cover;
   width: 100%;
   max-width: 100%;  
@@ -155,6 +208,12 @@ nav {
 .menu-products ul li i {
   padding-left: 10px;
 }
+.sell {
+  text-align: right;
+  /* padding-top: 90px;
+  padding-right: 30px; */
+}
+
 
 .all-products {
   line-height: 45px;
@@ -199,10 +258,7 @@ nav {
   text-align: center;
   width: 100%;
 }
-.list-phone, .list-style {
-  padding: 20px;
 
-}
 .page-number ul li {
   padding-left: 8px;
   font-weight: bold;
@@ -210,25 +266,51 @@ nav {
 
 
 /*==============main==================*/
+.new-arrivals {
+  background: url('../images/bg-new-arrivals.jpg') no-repeat top center;
+   background-size: cover;
+   padding: 64px 0px;
+}
 
+.best-sellers-1 {
+  background: url('../images/bg-best-seller-1.jpg') no-repeat bottom center;
+  background-size: contain;
+}
 
+.best-sellers-2 {
+  background: url('../images/bg-best-seller-2.jpg') no-repeat bottom center;
+  background-size: contain;
+}
+.best-sellers-3 {
+  background: url('../images/bg-best-seller-3.png') no-repeat bottom center;
+  background-size: contain;
+}
 /*===============footer=================*/
 footer {
+  background: url(../images/bg_footer.png) top no-repeat;
+  background-size: cover;
   clear: both;
- padding-top: 40px; 
+  padding-top: 80px; 
+  height: 120px;
+  
+  width: 100%;
+  
 }
 .contact {
   clear: both;
-  padding: 30px 0 30px 0;
+  padding: 15px 0 40px 0;
 }
 .icon-right {
   float: right;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 #address ul li {
   font-family: "Livvic";
   font-weight: bold;
   font-size: 15px;
+}
+#address ul li {
+  padding-top: 0px;
 }
 #address ul li i {
   padding-right: 5px;
@@ -236,18 +318,7 @@ footer {
 }
 /*==================footer===============*/
 
-.flex-box li {
-  height: 30px;
-  line-height: 30px;
-  padding-top: 40px;
 
-  
-}
-.flex-box img {
-  float: right;
-  padding-right: 10px;
-  padding-top: 6px;
-}
 
 
 strong {
@@ -261,20 +332,48 @@ strong {
   padding: 30px;
 
 }
+.categories {
+  padding-top: 60px;
+}
 
-.categories h2 {
-  padding: 60px 0 ;
-  
+.categories img {
+  float: right;
+  padding-right: 10px;
+
 }
+.categories a {
+  padding-left: 10px;
+}
+.style {
+  background: url('../images/bg-styles.jpg') no-repeat left center;
+  background-size: contain;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.style-categories h3, .devices h3 {
+  padding: 40px 0;
+  }
 .devices {
-  padding-left: 23px;
+  padding-left: 25px;
+  background: url('../images/bg-devices.jpg') no-repeat left center;
+  background-size: contain;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+.style-categories {
+  padding-left: 60px;
+  }
 .devices i {
   padding-right: 30px;
 }
-.style-categories {
-padding-left: 60px;
+.list-phone, .list-style {
+  padding: 20px 0;
+
 }
+.list-address {
+  padding-bottom: 7px;
+}
+
 .float-right {
   float: right;
 }
@@ -308,18 +407,69 @@ a {
   justify-content: space-between;
   
 }
-/*
+/*=====hover======*/
 .menu-top li a:hover {
   color: royalblue;
-  font-size: 150%;
   transition: 0.3s;
+  padding-top: -10px;
 }
-*/
-.btn-big:hover {
-  color: royalblue;
+.zoom:hover {
   font-size: 150%;
-  transition: 0.3s;
+  color: salmon;
+  font-family: "Livvic";
 }
+.fb-ig i:hover {
+  font-size: 150%;
+  color: green;
+}
+.phone-number>p:hover {
+  font-size: 150%;
+  color: green;
+}
+.list-phone:hover {
+  background-color: #f5d5bc;
+  border-radius: 5%;
+}
+.list-phone a:hover {
+  transition: 0.5s;
+}
+.list-style:hover{
+  background-color:  #cddae3 ;
+  border-radius: 0 50% 50% 0;
+}
+
+
+/*
+.shopping-cart a img:hover {
+  width: 40px;
+}*/
+  
+
 .clearboth {
   clear: both;
+}
+
+
+/* Restyle */
+.bg-patern {
+  position: relative;
+  background: url(../images/bg_title1.png) center no-repeat;
+  background-size: contain;
+  width: max-content;
+  padding: 2rem;
+}
+.bg-patern.bg-2 {
+  background: url(../images/bg_title2.png) center no-repeat;
+  background-size: contain;
+}
+.bg-patern.bg-3 {
+  background: url(../images/bg_title3.png) center no-repeat;
+  background-size: contain;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+.ml-auto {
+  margin-left: auto;
 }
